@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="64" height="64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <filter id="onlyshadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="0.3"/>
+        <feOffset dx="-0.5" dy="0.4" result="offsetblur"/>
+        <feMerge><feMergeNode/></feMerge>
+    </filter>
     <style type="text/css">
         @font-face{
             font-family:uc;
@@ -13,6 +18,11 @@
         }
         #midground{
             fill:#000080;
+        }
+        #shadowline{
+            stroke:#444;
+            stroke-width:1px;
+            filter:url(#onlyshadow);
         }
         #foreground{
             fill:rgba(68,68,68,0.9);
@@ -28,6 +38,7 @@
     </style>
     <polygon id="background" points="64,4 64,62 62,64 1,64 0,63 0,40 60,3"/>
     <polygon id="midground"  points="0,63 1,64 62,64 64,62 64,50 4,13 1,12.5 0,13"/>
+    <line id="shadowline" x1="0" y1="40" x2="60" y2="3"/>
     <polygon id="foreground" points="64,4 64,62 62,64 1,64 0,63 0,40 60,3"/>
     <text id="text" x="62.5" y="64">xmake</text>
 </svg>
