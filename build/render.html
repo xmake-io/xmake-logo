@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<title>render</title>
+<meta charset="UTF-8">
+<script>
+
+window.onload=function(){
+    var img=document.createElement("img")
+    img.src="../src/logo.svg"
+    img.onload=function(){
+        var cvs=document.createElement("canvas")
+        cvs.width=256
+        cvs.height=256
+        var ctx=cvs.getContext("2d")
+        ctx.drawImage(img,0,0,256,256)
+        document.body.appendChild(cvs)
+    }
+}
+
+</script>
