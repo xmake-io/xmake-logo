@@ -23,6 +23,7 @@
             stroke:#444;
             stroke-width:1px;
             filter:url(#onlyshadow);
+            fill:transparent;
         }
         #foreground{
             fill:rgba(68,68,68,0.9);
@@ -38,7 +39,7 @@
     </style>
     <polygon id="background" points="64,4 64,62 62,64 1,64 0,63 0,40 60,3"/>
     <polygon id="midground"  points="0,63 1,64 62,64 64,62 64,50 4,13 1,12.5 0,13"/>
-    <line id="shadowline" x1="0" y1="40" x2="60" y2="3"/>
+    <polyline id="shadowline" points="0,40 60,3 64,4"/>
     <polygon id="foreground" points="64,4 64,62 62,64 1,64 0,63 0,40 60,3"/>
     <text id="text" x="62.5" y="64">xmake</text>
 </svg>
