@@ -17,7 +17,7 @@
             fill:white;
         }
         #midground{
-            fill:#000080;
+            fill:#8BC34A;
         }
         #shadowline{
             stroke:#444;
@@ -26,10 +26,10 @@
             fill:transparent;
         }
         #foreground{
-            fill:rgba(68,68,68,0.9);
+            fill:rgba(0,150,136,0.9);
         }
         #text{
-            fill:white;
+            fill:#FAFDF7;
             dominant-baseline:text-after-edge;
             text-anchor:end;
             font-family:uc;
