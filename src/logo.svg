@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="256" height="256" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="64" height="64" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <filter id="onlyshadow">
         <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
         <feOffset dx="-0.5" dy="0.4" result="offsetblur"/>
@@ -33,13 +33,13 @@
             dominant-baseline:text-after-edge;
             text-anchor:end;
             font-family:uc;
-            font-size:88px;
+            font-size:22px;
             font-weight:bold;
         }
     </style>
-    <polygon id="background" points="256,16 256,248 248,256 4,256 0,252 0,160 240,12"/>
-    <polygon id="midground"  points="0,252 4,256 248,256 256,248 256,200 16,52 4,50 0,52"/>
-    <polyline id="shadowline" points="0,160 240,12 256,16"/>
-    <polygon id="foreground" points="256,16 256,248 248,256 4,256 0,252 0,160 240,12"/>
-    <text id="text" x="250" y="256">xmake</text>
+    <polygon id="background" points="64,4 64,62 62,64 1,64 0,63 0,40 60,3"/>
+    <polygon id="midground"  points="0,63 1,64 62,64 64,62 64,50 4,13 1,12.5 0,13"/>
+    <polyline id="shadowline" points="0,40 60,3 64,4"/>
+    <polygon id="foreground" points="64,4 64,62 62,64 1,64 0,63 0,40 60,3"/>
+    <text id="text" x="62.5" y="64">xmake</text>
 </svg>
