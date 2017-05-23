@@ -38,3 +38,6 @@ xmake logo
 <td>128x128
 <td>256x256
 </table>
+
+## Rasterize
+open `build/render.html` then rightclick and `save as image`
